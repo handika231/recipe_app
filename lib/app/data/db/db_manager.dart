@@ -10,7 +10,7 @@ class DatabaseManager {
   static DatabaseManager instance = DatabaseManager._();
   DatabaseManager._();
 
-  //Membuat Database
+  //Membuat variabel database
   Database? _database;
   Future<Database> get database async {
     if (_database != null) return _database!;
@@ -18,12 +18,14 @@ class DatabaseManager {
     return _database!;
   }
 
+//Fungsi untuk membuat database
   Future _initDatabase() async {
     Directory directory = await getApplicationDocumentsDirectory();
     String path = join(directory.path, 'recipe.db');
     return await openDatabase(path, version: 1, onCreate: _onCreate);
   }
 
+//Fungsi untuk membuat table
   Future<void> _onCreate(Database db, int version) async {
     return await db.execute(
       '''
@@ -36,6 +38,7 @@ class DatabaseManager {
     );
   }
 
+//JIKA SEWAKTU-WAKTU INGIN MENGHAPUS DATABASE
   Future closeDB() async {
     _database = await instance.database;
     _database!.close();

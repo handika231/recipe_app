@@ -58,6 +58,7 @@ class DetailRecipeController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    //Melakukan pengecekan jika argumennya tidak null maka data model diisi dengan data yang dikirimkan dari argumen
     if (Get.arguments != null) {
       recipeModel.value = Get.arguments as RecipeModel;
     }

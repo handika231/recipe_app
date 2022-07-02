@@ -29,6 +29,7 @@ class AddRecipeController extends GetxController {
   }
 
   DatabaseManager database = DatabaseManager.instance;
+  //Fungsi tambah data ke database
   void addRecipe() async {
     Database db = await database.database;
     await db.insert('recipes', {

@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+//MEMBUAT MODEL YANG NANTINYA DIJADIKAN SEBAGAI DATA MODEL
 class RecipeModel {
   int? id;
   String? title;
