@@ -82,7 +82,6 @@ class AddRecipeView extends GetView<AddRecipeController> {
                             InkWell(
                               onTap: () async {
                                 await controller.openGallery();
-
                                 Get.back();
                               },
                               child: Column(
