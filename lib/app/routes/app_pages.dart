@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 
+import '../modules/add_recipe/bindings/add_recipe_binding.dart';
 import '../modules/add_recipe/views/add_recipe_view.dart';
 import '../modules/detail_recipe/bindings/detail_recipe_binding.dart';
 import '../modules/detail_recipe/views/detail_recipe_view.dart';
@@ -16,7 +17,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => HomeView(),
+      page: () => const HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
@@ -27,7 +28,7 @@ class AppPages {
     GetPage(
       name: _Paths.ADD_RECIPE,
       page: () => AddRecipeView(),
-      // binding: AddRecipeBinding(),
+      binding: AddRecipeBinding(),
     ),
   ];
 }

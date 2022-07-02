@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:recipe_app/app/modules/home/controllers/home_controller.dart';
 
 import '../controllers/add_recipe_controller.dart';
 
 class AddRecipeView extends GetView<AddRecipeController> {
   AddRecipeView({Key? key}) : super(key: key);
-  final addC = Get.find<AddRecipeController>();
+  final HomeController homeC = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +22,8 @@ class AddRecipeView extends GetView<AddRecipeController> {
             onPressed: () async {
               if (controller.formKey.currentState!.validate() &&
                   controller.fileImage.value.path.isNotEmpty) {
+                controller.addRecipe();
+                await homeC.getAllRecipe();
                 Get.back();
               } else {
                 Get.snackbar(
