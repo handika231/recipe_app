@@ -1,16 +1,26 @@
-# recipe_app
+<div align="center">
+      <h1> <img src="https://dcassetcdn.com/design_img/10150/1674/1674_291296_10150_image.jpg" width="80px"><br/>Recipe App</h1>
+     </div>
 
-A new Flutter project.
 
-## Getting Started
+# Description
+food recipe recorder app
 
-This project is a starting point for a Flutter application.
+# Features
+## Package
 
-A few resources to get you started if this is your first Flutter project:
+- Lottie
+- Sqflite
+- get
+- image_picker
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+# Tech Used
+ ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+
+
+
+<!-- </> with 💛 by readMD (https://readmd.itsvg.in) -->
